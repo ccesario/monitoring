@@ -46,7 +46,7 @@ snmp_port           | **Optional.** The SNMP port connection.
 snmp_v2c            | **Optional.** SNMP version to 2c. Defaults to "false".
 snmp_warn           | **Optional.** The warning threshold.
 snmp_crit           | **Optional.** The critical threshold.
-snmp_load_type      | **Optional.** Load type. Default  to "stand". Check all availables <a href="http://nagios.manubulon.com/snmp_load.html"> snmp load</a>
+snmp_load_type      | **Optional.** Load type. Default  to "stand". Check all availables <a href="http://nagios.manubulon.com/snmp_load.html">snmp load</a>
 snmp_perf           | **Optional.** Enable perfdata values. Defaults to "true"
 
 #### <a id="plugin-check-command-snmp-memory"></a> snmp memory
@@ -79,7 +79,7 @@ snmp_port           | **Optional.** The SNMP port connection.
 snmp_v2c            | **Optional.** SNMP version to 2c. Defaults to "false".
 snmp_warn           | **Optional.** The warning threshold.
 snmp_crit           | **Optional.** The critical threshold.
-snmp_storage_name   | **Optional.** Storage name. Default to regex ".*".
+snmp_storage_name   | **Optional.** Storage name. Default to regex "^/$$". Check more options in <a href="http://nagios.manubulon.com/snmp_storage.html">snmp storage</a>
 snmp_perf           | **Optional.** Enable perfdata values. Defaults to "true"
 
 #### <a id="plugin-check-command-snmp-int"></a> snmp int
