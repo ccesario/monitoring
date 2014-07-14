@@ -46,6 +46,75 @@ snmp_port           | **Optional.** The SNMP port connection.
 snmp_v2c            | **Optional.** SNMP version to 2c. Defaults to "false".
 snmp_warn           | **Optional.** The warning threshold.
 snmp_crit           | **Optional.** The critical threshold.
-snmp_string         | **Optional.** Return OK state if the string exact match with the output value
 snmp_load_type      | **Optional.** Load type. Default  to "stand". Check all availables <a href="http://nagios.manubulon.com/snmp_load.html"> snmp load</a>
-snmp_perf           | **Optional.** Enable perfdata values. Defaults "true"
+snmp_perf           | **Optional.** Enable perfdata values. Defaults to "true"
+
+#### <a id="plugin-check-command-snmp-memory"></a> snmp memory
+
+Check command object for the `check_snmp_mem.pl` plugin.
+
+Custom Attributes:
+
+Name                | Description
+--------------------|--------------
+snmp_address        | **Optional.** The host's address. Defaults to "$address$".
+snmp_community      | **Optional.** The SNMP community. Defaults to "public".
+snmp_port           | **Optional.** The SNMP port connection.
+snmp_v2c            | **Optional.** SNMP version to 2c. Defaults to "false".
+snmp_warn           | **Optional.** The warning threshold.
+snmp_crit           | **Optional.** The critical threshold.
+snmp_perf           | **Optional.** Enable perfdata values. Defaults to "true"
+
+#### <a id="plugin-check-command-snmp-storage"></a> snmp storage
+
+Check command object for the `check_snmp_storage.pl` plugin.
+
+Custom Attributes:
+
+Name                | Description
+--------------------|--------------
+snmp_address        | **Optional.** The host's address. Defaults to "$address$".
+snmp_community      | **Optional.** The SNMP community. Defaults to "public".
+snmp_port           | **Optional.** The SNMP port connection.
+snmp_v2c            | **Optional.** SNMP version to 2c. Defaults to "false".
+snmp_warn           | **Optional.** The warning threshold.
+snmp_crit           | **Optional.** The critical threshold.
+snmp_storage_name   | **Optional.** Storage name. Default to regex ".*".
+snmp_perf           | **Optional.** Enable perfdata values. Defaults to "true"
+
+#### <a id="plugin-check-command-snmp-int"></a> snmp int
+
+Check command object for the `check_snmp_int.pl` plugin.
+
+Custom Attributes:
+
+Name                  | Description
+----------------------|--------------
+snmp_address          | **Optional.** The host's address. Defaults to "$address$".
+snmp_community        | **Optional.** The SNMP community. Defaults to "public".
+snmp_port             | **Optional.** The SNMP port connection.
+snmp_v2c              | **Optional.** SNMP version to 2c. Defaults to "false".
+snmp_warn             | **Optional.** The warning threshold.
+snmp_crit             | **Optional.** The critical threshold.
+snmp_interface        | **Optional.** Network interface name. Default to regex "eth0".
+snmp_interface_perf   | **Optional.** Check the input/ouput bandwidth of the interface. Defaults to "true"
+snmp_interface_bits   | **Optional.** Make the warning and critical levels in KBits/s. Defaults to "true"
+snmp_interface_64bit  | **Optional.** Use 64 bits counters instead of the standard counters when checking bandwidth & performance data for interface >= 1Gbps. Defaults to "false"
+snmp_perf             | **Optional.** Enable perfdata values. Defaults to "true"
+
+#### <a id="plugin-check-command-snmp-process"></a> snmp process
+
+Check command object for the `check_snmp_process.pl` plugin.
+
+Custom Attributes:
+
+Name                  | Description
+----------------------|--------------
+snmp_address          | **Optional.** The host's address. Defaults to "$address$".
+snmp_community        | **Optional.** The SNMP community. Defaults to "public".
+snmp_port             | **Optional.** The SNMP port connection.
+snmp_v2c              | **Optional.** SNMP version to 2c. Defaults to "false".
+snmp_warn             | **Optional.** The warning threshold.
+snmp_crit             | **Optional.** The critical threshold.
+snmp_process_name     | **Optional.** Name of the process (regexp). No trailing slash!. Defaults to ".*"
+snmp_perf             | **Optional.** Enable perfdata values. Defaults to "true"
