@@ -28,4 +28,24 @@ Icinga2 check commands for <a href="http://nagios.manubulon.com/index_snmp.html"
   NetsecureOne Netbox     |   Yes      |   Yes    |   Yes     | ??  |   Yes    | No  |
   Radware Linkproof       |   Yes      |   N/A    |   snmp    | snmp|   No     | No  | check_snmp_linkproof_nhr <br> check_snmp_vrrp.pl
   IronPort                |   Yes      |   snmp   |   snmp    | snmp|   No     | Yes |
-  Cisco CSS               |   Yes      |   ??     |   Yes     | Yes |   No     | ??  | check_snmp_css.pl 
+  Cisco CSS               |   Yes      |   ??     |   Yes     | Yes |   No     | ??  | check_snmp_css.pl
+
+## <a id="plugin-check-commands"></a> Plugin Check Commands
+
+#### <a id="plugin-check-command-snmp-load"></a> snmp load
+
+Check command object for the `check_snmp_load.pl` plugin.
+
+Custom Attributes:
+
+Name                | Description
+--------------------|--------------
+snmp_address        | **Optional.** The host's address. Defaults to "$address$".
+snmp_community      | **Optional.** The SNMP community. Defaults to "public".
+snmp_port           | **Optional.** The SNMP port connection.
+snmp_v2c            | **Optional.** SNMP version to 2c. Defaults to "false".
+snmp_warn           | **Optional.** The warning threshold.
+snmp_crit           | **Optional.** The critical threshold.
+snmp_string         | **Optional.** Return OK state if the string exact match with the output value
+snmp_load_type      | **Optional.** Load type. Default  to "stand". Check all availables <a href="http://nagios.manubulon.com/snmp_load.html"> snmp load</a>
+snmp_perf           | **Optional.** Enable perfdata values. Defaults "true"
