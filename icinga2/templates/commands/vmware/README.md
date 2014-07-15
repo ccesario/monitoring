@@ -7,7 +7,7 @@ Icinga2 check commands for <a href="https://github.com/BaldMansMojo/check_vmware
 
 #### <a id="plugin-check-command-vmware-esx-dc-volumes"></a> vmware-esx-dc-volumes
 
-Check command object for the `check_vmware_esx datacenter volumes` plugin. Shows all datastore volumes info.
+Check command object for the `check_vmware_esx` plugin. Shows all datastore volumes info.
 
 Custom Attributes:
 
@@ -35,7 +35,7 @@ vmware_crit             | **Optional.** The critical threshold for volumes. Defa
 
 #### <a id="plugin-check-command-vmware-esx-dc-volume-name"></a> vmware-esx-dc-volume-name
 
-Check command object for the `check_vmware_esx datacenter volume name` plugin. Shows specific datastore volume info.
+Check command object for the `check_vmware_esx` plugin. Shows specific datastore volume info.
 
 Custom Attributes:
 
@@ -64,7 +64,7 @@ vmware_crit             | **Optional.** The critical threshold for volumes. Defa
 
 #### <a id="plugin-check-command-vmware-esx-dc-runtime"></a> vmware-esx-dc-runtime
 
-Check command object for the `check_vmware_esx runtime` plugin. Shows all runtime info for the datacenter/Vcenter.
+Check command object for the `check_vmware_esx` plugin. Shows all runtime info for the datacenter/Vcenter.
 
 Custom Attributes:
 
