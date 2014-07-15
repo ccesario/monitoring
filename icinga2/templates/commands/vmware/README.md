@@ -26,5 +26,5 @@ vmware_authfile         | **Optional.** Use auth file instead username/password 
                                        **Autentication file content:** <br>
                                           username=<username> <br>
                                           password=<password> <br>
-                                          Defaults to "/etc/icinga2/vmware_esx_auth".
+                                          Defaults to "/etc/icinga2/vmware_esx_auth".|
 
