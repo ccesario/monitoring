@@ -22,9 +22,9 @@ vmware_sessionfile      | **Optional.** Vmware auth session file - no effect if 
 vmware_sessionfiledir   | **Optional.** Path to store the **vmware_sessionfile** file. Defaults to "/var/spool/icinga2/tmp".
 vmware_user             | **Optional.** The username to connect to Host or vCenter server. No value defined as default.
 vmware_password         | **Optional.** The username's password. No value defined as default.
-vmware_authfile         | **Optional.** Use auth file instead username/password to session connect. No value if **vmware_user** or **vmware_password** are defined.<br>
-                                        **Autentication file content:** <br>
-                                          username=<username> <br>
-                                          password=<password> <br>
-                                          Defaults to "/etc/icinga2/vmware_esx_auth"
+vmware_authfile         | **Optional.** Use auth file instead username/password to session connect. No effect if **vmware_user** or **vmware_password** are defined.<br>
+                        |               **Autentication file content:** <br>
+                        |                  username=<username> <br>
+                        |                  password=<password> <br>
+                        |                  Defaults to "/etc/icinga2/vmware_esx_auth"
 
