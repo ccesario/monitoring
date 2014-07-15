@@ -5,7 +5,7 @@ Icinga2 check commands for <a href="https://github.com/BaldMansMojo/check_vmware
 
 ## <a id="plugin-check-commands"></a> Plugin Check Commands
 
-#### <a id="plugin-check-command-vmware-esx-dc-volumes"></a> vmware esx dc volumes
+#### <a id="plugin-check-command-vmware-esx-dc-volumes"></a> vmware-esx-dc-volumes
 
 Check command object for the `check_vmware_esx datacenter volumes` plugin. Shows all datastore volumes info.
 
@@ -33,7 +33,7 @@ vmware_warn             | **Optional.** The warning threshold for volumes. Defau
 vmware_crit             | **Optional.** The critical threshold for volumes. Defaults to "90%".
 
 
-#### <a id="plugin-check-command-vmware-esx-dc-volume-name"></a> vmware esx dc volume name
+#### <a id="plugin-check-command-vmware-esx-dc-volume-name"></a> vmware-esx-dc-volume-name
 
 Check command object for the `check_vmware_esx datacenter volume name` plugin. Shows specific datastore volume info.
 
@@ -62,7 +62,7 @@ vmware_warn             | **Optional.** The warning threshold for volumes. Defau
 vmware_crit             | **Optional.** The critical threshold for volumes. Defaults to "90%".
 
 
-#### <a id="plugin-check-command-vmware-esx-dc-runtime"></a> vmware esx dc runtime
+#### <a id="plugin-check-command-vmware-esx-dc-runtime"></a> vmware-esx-dc-runtime
 
 Check command object for the `check_vmware_esx runtime` plugin. Shows all runtime info for the datacenter/Vcenter.
 
