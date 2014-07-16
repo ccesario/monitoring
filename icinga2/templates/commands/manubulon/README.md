@@ -34,7 +34,7 @@ Icinga2 check commands for <a href="http://nagios.manubulon.com/index_snmp.html"
 
 #### <a id="plugin-check-command-snmp-load"></a> snmp load
 
-Check command object for the `check_snmp_load.pl` plugin.
+Check command object for the <a href="http://nagios.manubulon.com/snmp_load.html"> check_snmp_load.pl </a> plugin.
 
 Custom Attributes:
 
@@ -48,10 +48,10 @@ snmp_port               | **Optional.** The SNMP port connection.
 snmp_v2                 | **Optional.** SNMP version to 2c. Defaults to "false".
 snmp_v3                 | **Optional.** SNMP version to 3. Defaults to "false".
 snmp_login              | **Optional.** SNMP version 3 username. Defaults to "snmpuser".
-snmp_password           | **Optional.** SNMP version 3 password. Defaults to "p@ssw0rd".
-snmp_v3_use_authpriv    | **Optional.** Define to use SNMP version 3 priv password. Defaults to "false".
-snmp_authpriv_protocol  | **Optional.** SNMP version 3 authentication and priv protocols. Defaults to "md5,des".
-snmp_privpass           | **Optional.** SNMP version 3 priv password. Defaults to "p@ssw0rd"
+snmp_password           | **Required.** SNMP version 3 password. No value defined as default.
+snmp_v3_use_privpass    | **Optional.** Define to use SNMP version 3 priv password. Defaults to "false".
+snmp_authprotocol       | **Optional.** SNMP version 3 authentication protocol. Defaults to "md5,des".
+snmp_privpass           | **Required.** SNMP version 3 priv password. No value defined as default.
 snmp_warn               | **Optional.** The warning threshold.
 snmp_crit               | **Optional.** The critical threshold.
 snmp_load_type          | **Optional.** Load type. Default  to "stand". Check all availables <a href="http://nagios.manubulon.com/snmp_load.html">snmp load</a>.
@@ -59,7 +59,7 @@ snmp_perf               | **Optional.** Enable perfdata values. Defaults to "tru
 
 #### <a id="plugin-check-command-snmp-memory"></a> snmp memory
 
-Check command object for the `check_snmp_mem.pl` plugin.
+Check command object for the <a href="http://nagios.manubulon.com/snmp_mem.html"> check_snmp_mem.pl </a> plugin.
 
 Custom Attributes:
 
@@ -72,17 +72,17 @@ snmp_port               | **Optional.** The SNMP port connection.
 snmp_v2                 | **Optional.** SNMP version to 2c. Defaults to "false".
 snmp_v3                 | **Optional.** SNMP version to 3. Defaults to "false".
 snmp_login              | **Optional.** SNMP version 3 username. Defaults to "snmpuser".
-snmp_password           | **Optional.** SNMP version 3 password. Defaults to "p@ssw0rd".
-snmp_v3_use_authpriv    | **Optional.** Define to use SNMP version 3 priv password. Defaults to "false".
-snmp_authpriv_protocol  | **Optional.** SNMP version 3 authentication and priv protocols. Defaults to "md5,des".
-snmp_privpass           | **Optional.** SNMP version 3 priv password. Defaults to "p@ssw0rd"
+snmp_password           | **Required.** SNMP version 3 password. No value defined as default.
+snmp_v3_use_privpass    | **Optional.** Define to use SNMP version 3 priv password. Defaults to "false".
+snmp_authprotocol       | **Optional.** SNMP version 3 authentication protocol. Defaults to "md5,des".
+snmp_privpass           | **Required.** SNMP version 3 priv password. No value defined as default.
 snmp_warn               | **Optional.** The warning threshold.
 snmp_crit               | **Optional.** The critical threshold.
 snmp_perf               | **Optional.** Enable perfdata values. Defaults to "true".
 
 #### <a id="plugin-check-command-snmp-storage"></a> snmp storage
 
-Check command object for the `check_snmp_storage.pl` plugin.
+Check command object for the <a href="http://nagios.manubulon.com/snmp_storage.html"> check_snmp_storage.pl </a> plugin.
 
 Custom Attributes:
 
@@ -95,10 +95,10 @@ snmp_port               | **Optional.** The SNMP port connection.
 snmp_v2                 | **Optional.** SNMP version to 2c. Defaults to "false".
 snmp_v3                 | **Optional.** SNMP version to 3. Defaults to "false".
 snmp_login              | **Optional.** SNMP version 3 username. Defaults to "snmpuser".
-snmp_password           | **Optional.** SNMP version 3 password. Defaults to "p@ssw0rd".
-snmp_v3_use_authpriv    | **Optional.** Define to use SNMP version 3 priv password. Defaults to "false".
-snmp_authpriv_protocol  | **Optional.** SNMP version 3 authentication and priv protocols. Defaults to "md5,des".
-snmp_privpass           | **Optional.** SNMP version 3 priv password. Defaults to "p@ssw0rd".
+snmp_password           | **Required.** SNMP version 3 password. No value defined as default.
+snmp_v3_use_privpass    | **Optional.** Define to use SNMP version 3 priv password. Defaults to "false".
+snmp_authprotocol       | **Optional.** SNMP version 3 authentication protocol. Defaults to "md5,des".
+snmp_privpass           | **Required.** SNMP version 3 priv password. No value defined as default..
 snmp_warn               | **Optional.** The warning threshold.
 snmp_crit               | **Optional.** The critical threshold.
 snmp_storage_name       | **Optional.** Storage name. Default to regex "^/$$". Check more options in <a href="http://nagios.manubulon.com/snmp_storage.html">snmp storage</a>.
@@ -106,7 +106,7 @@ snmp_perf               | **Optional.** Enable perfdata values. Defaults to "tru
 
 #### <a id="plugin-check-command-snmp-int"></a> snmp int
 
-Check command object for the `check_snmp_int.pl` plugin.
+Check command object for the <a href="http://nagios.manubulon.com/snmp_int.html"> check_snmp_int.pl </a> plugin.
 
 Custom Attributes:
 
@@ -119,10 +119,10 @@ snmp_port               | **Optional.** The SNMP port connection.
 snmp_v2                 | **Optional.** SNMP version to 2c. Defaults to "false".
 snmp_v3                 | **Optional.** SNMP version to 3. Defaults to "false".
 snmp_login              | **Optional.** SNMP version 3 username. Defaults to "snmpuser".
-snmp_password           | **Optional.** SNMP version 3 password. Defaults to "p@ssw0rd".
-snmp_v3_use_authpriv    | **Optional.** Define to use SNMP version 3 priv password. Defaults to "false".
-snmp_authpriv_protocol  | **Optional.** SNMP version 3 authentication and priv protocols. Defaults to "md5,des".
-snmp_privpass           | **Optional.** SNMP version 3 priv password. Defaults to "p@ssw0rd".
+snmp_password           | **Required.** SNMP version 3 password. No value defined as default.
+snmp_v3_use_privpass    | **Optional.** Define to use SNMP version 3 priv password. Defaults to "false".
+snmp_authprotocol       | **Optional.** SNMP version 3 authentication protocol. Defaults to "md5,des".
+snmp_privpass           | **Required.** SNMP version 3 priv password. No value defined as default..
 snmp_warn               | **Optional.** The warning threshold.
 snmp_crit               | **Optional.** The critical threshold.
 snmp_interface          | **Optional.** Network interface name. Default to regex "eth0".
@@ -133,7 +133,7 @@ snmp_perf               | **Optional.** Enable perfdata values. Defaults to "tru
 
 #### <a id="plugin-check-command-snmp-process"></a> snmp process
 
-Check command object for the `check_snmp_process.pl` plugin.
+Check command object for the <a href="http://nagios.manubulon.com/snmp_process.html"> check_snmp_process.pl </a> plugin.
 
 Custom Attributes:
 
@@ -146,10 +146,10 @@ snmp_port               | **Optional.** The SNMP port connection.
 snmp_v2                 | **Optional.** SNMP version to 2c. Defaults to "false".
 snmp_v3                 | **Optional.** SNMP version to 3. Defaults to "false".
 snmp_login              | **Optional.** SNMP version 3 username. Defaults to "snmpuser".
-snmp_password           | **Optional.** SNMP version 3 password. Defaults to "p@ssw0rd".
-snmp_v3_use_authpriv    | **Optional.** Define to use SNMP version 3 priv password. Defaults to "false".
-snmp_authpriv_protocol  | **Optional.** SNMP version 3 authentication and priv protocols. Defaults to "md5,des".
-snmp_privpass           | **Optional.** SNMP version 3 priv password. Defaults to "p@ssw0rd".
+snmp_password           | **Required.** SNMP version 3 password. No value defined as default.
+snmp_v3_use_privpass    | **Optional.** Define to use SNMP version 3 priv password. Defaults to "false".
+snmp_authprotocol       | **Optional.** SNMP version 3 authentication protocol. Defaults to "md5,des".
+snmp_privpass           | **Required.** SNMP version 3 priv password. No value defined as default..
 snmp_warn               | **Optional.** The warning threshold.
 snmp_crit               | **Optional.** The critical threshold.
 snmp_process_name       | **Optional.** Name of the process (regexp). No trailing slash!. Defaults to ".*".
