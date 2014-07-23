@@ -33,7 +33,6 @@ The snmp manubulon plugin check commands assume that there's a global constant n
   IronPort                |   Yes      |   snmp   |   snmp    | snmp|   No     | Yes |
   Cisco CSS               |   Yes      |   ??     |   Yes     | Yes |   No     | ??  | check_snmp_css.pl
 
-## <a id="plugin-check-commands"></a> Plugin Check Commands
 
 #### <a id="plugin-check-command-snmp-load"></a> snmp load
 
