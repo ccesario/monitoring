@@ -1,7 +1,10 @@
-Monitoring
-==========
+## <a id="snmp-manubulon-plugin-check-commands"></a> Snmp Manubulon Plugin Check Commands
 
-Icinga2 check commands for <a href="http://nagios.manubulon.com/index_snmp.html"> snmp manubulon </a> plugins.
+### <a id="snmp-manubulon-plugin-check-commands-overview"></a> Overview
+
+The Snmp Manubulon Plugin Check Commands provides example configuration for plugin check commands provided by the <a href="http://nagios.manubulon.com/index_snmp.html"> Snmp Manubulon </a> plugins.
+
+The snmp manubulon plugin check commands assume that there's a global constant named `manubulonPluginDir` which contains the path of the plugins from the <a href="http://nagios.manubulon.com/index_snmp.html"> Snmp Manubulon </a> page.
 
 ### Checks you can make by host type
 
