@@ -1,9 +1,8 @@
 Monitoring
 ==========
 
+## <a id="plugin-check-commands"></a> Vmware
 Icinga2 check commands for <a href="https://github.com/BaldMansMojo/check_vmware_esx"> vmware esx </a> plugins.
-
-## <a id="plugin-check-commands"></a> Plugin Check Commands
 
 #### <a id="plugin-check-command-vmware-esx-dc-volumes"></a> vmware-esx-dc-volumes
 
@@ -12,23 +11,29 @@ Check command object for the `check_vmware_esx` plugin. Shows all datastore volu
 Custom Attributes:
 
 
+
 Name                    | Description
 ------------------------|--------------
-vmware_vcenter_address  | **Optional.** The vCenter's address. Defaults to "$address$".
-vmware_trace            | **Optional.** Set verbosity level of vSphere API request/respond trace. Defauls to "0".
+vmware_datacenter       | **Required.** Datacenter/vCenter hostname.
+vmware_sslport          | **Optional.** SSL port connection. Defaults to "443".
+vmware_ignoreunknown    | **Optional.** Sometimes 3 (unknown) is returned from a component. But the check itself is ok. With this option the plugin will return OK (0) instead of UNKNOWN (3). Defaults to "false".
+vmware_ignorewarning    | **Optional.** Sometimes 2 (warning) is returned from a component. But the check itself is ok (from an operator view). With this option the plugin will return OK (0) instead of WARNING (1). Defaults to "false".
 vmware_timeout          | **Optional.** Seconds before plugin times out. Defaults to "90".
-vmware_ignorewarning    | **Optional.** Will return OK (0) instead of WARNING (1) when 2 (warning) are returned by a component. Defaults to "false". 
-vmware_auth_nosession   | **Optional.** Don't use a session file for authentication. Defaults to "false".
-vmware_sessionfile      | **Optional.** Vmware auth session file - no effect if **vmware_auth_nosession** is set. No value defined as default, the plugin will generate a random file.
+vmware_trace            | **Optional.** Set verbosity level of vSphere API request/respond trace.
+vmware_sessionfile      | **Optional.** Session file name enhancement.
 vmware_sessionfiledir   | **Optional.** Path to store the **vmware_sessionfile** file. Defaults to "/var/spool/icinga2/tmp".
-vmware_user             | **Optional.** The username to connect to Host or vCenter server. No value defined as default.
+vmware_nosession        | **Optional.** No auth session - IT SHOULD BE USED FOR TESTING PURPOSES ONLY!. Defaults to "false".
+vmware_username         | **Optional.** The username to connect to Host or vCenter server. No value defined as default.
 vmware_password         | **Optional.** The username's password. No value defined as default.
-vmware_authfile         | **Optional.** Use auth file instead username/password to session connect. No effect if **vmware_user** or **vmware_password** are defined <br> **Autentication file content:** <br>  username=vmuser <br> password=p@ssw0rd <br>  Defaults to "/etc/icinga2/vmware_esx_auth".
-vmware_whitelist        | **Optional.** Whitelist volumes names. No value defined as default.
-vmware_blacklist        | **Optional.** Blacklist volumes names. No value defined as default.
+vmware_authfile         | **Required.** Use auth file instead username/password to session connect. No effect if **vmware_user** or **vmware_password** are defined <br> **Autentication file content:** <br>  username=vmuser <br> password=p@ssw0rd <br>  Defaults to "/etc/icinga2/vmware_esx_auth".
+vmware_subselect        | **Optional.** Volume name to be checked the free space.
+vmware_gigabyte         | **Optional.** Output in GB instead of MB.
+vmware_usedspace        | **Optional.** Output used space instead of free. Defaults to "false".
+vmware_alertonly        | **Optional.** List only alerting volumes. Defaults to "false".
+vmware_exclude          | **Optional.** Blacklist volumes name. No value defined as default.
+vmware_include          | **Optional.** Whitelist volumes name. No value defined as default.
 vmware_isregexp         | **Optional.** Treat blacklist and whitelist expressions as regexp.
 vmware_dc_volume_used   | **Optional.** Output used space instead of free. Defaults to "true".
-vmware_alertonly        | **Optional.** List only alerting volumes. 
 vmware_warn             | **Optional.** The warning threshold for volumes. Defaults to "80%".
 vmware_crit             | **Optional.** The critical threshold for volumes. Defaults to "90%".
 
