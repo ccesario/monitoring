@@ -25,7 +25,7 @@ vmware_sessionfiledir   | **Optional.** Path to store the **vmware_sessionfile**
 vmware_nosession        | **Optional.** No auth session - IT SHOULD BE USED FOR TESTING PURPOSES ONLY!. Defaults to "false".
 vmware_username         | **Optional.** The username to connect to Host or vCenter server. No value defined as default.
 vmware_password         | **Optional.** The username's password. No value defined as default.
-vmware_authfile         | **Required.** Use auth file instead username/password to session connect. No effect if **vmware_user** or **vmware_password** are defined <br> **Autentication file content:** <br>  username=vmuser <br> password=p@ssw0rd <br>  Defaults to "/etc/icinga2/vmware_esx_auth".
+vmware_authfile         | **Required.** Use auth file instead username/password to session connect. No effect if **vmware_username** or **vmware_password** are defined <br> **Autentication file content:** <br>  username=vmuser <br> password=p@ssw0rd <br>  Defaults to "/etc/icinga2/vmware_esx_auth".
 vmware_subselect        | **Optional.** Volume name to be checked the free space.
 vmware_gigabyte         | **Optional.** Output in GB instead of MB.
 vmware_usedspace        | **Optional.** Output used space instead of free. Defaults to "false".
@@ -58,4 +58,4 @@ vmware_sessionfiledir   | **Optional.** Path to store the **vmware_sessionfile**
 vmware_nosession        | **Optional.** No auth session - IT SHOULD BE USED FOR TESTING PURPOSES ONLY!. Defaults to "false".
 vmware_username         | **Optional.** The username to connect to Host or vCenter server. No value defined as default.
 vmware_password         | **Optional.** The username's password. No value defined as default.
-vmware_authfile         | **Required.** Use auth file instead username/password to session connect. No effect if **vmware_user** or **vmware_password** are defined <br> **Autentication file content:** <br>  username=vmuser <br> password=p@ssw0rd <br>  Defaults to "/etc/icinga2/vmware_esx_auth".
+vmware_authfile         | **Required.** Use auth file instead username/password to session connect. No effect if **vmware_username** or **vmware_password** are defined <br> **Autentication file content:** <br>  username=vmuser <br> password=p@ssw0rd <br>  Defaults to "/etc/icinga2/vmware_esx_auth".
