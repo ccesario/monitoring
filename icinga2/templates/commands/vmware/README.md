@@ -82,3 +82,7 @@ vmware_nosession        | **Optional.** No auth session - IT SHOULD BE USED FOR 
 vmware_username         | **Optional.** The username to connect to Host or vCenter server. No value defined as default.
 vmware_password         | **Optional.** The username's password. No value defined as default.
 vmware_authfile         | **Required.** Use auth file instead username/password to session connect. No effect if **vmware_username** or **vmware_password** are defined <br> **Autentication file content:** <br>  username=vmuser <br> password=p@ssw0rd <br>  Defaults to "/etc/icinga2/vmware_esx_auth".
+vmware_alertonly        | **Optional.** List only alerting VMs. Important here to avoid masses of data.
+vmware_exclude          | **Optional.** Blacklist VMs name. No value defined as default.
+vmware_include          | **Optional.** Whitelist VM name. No value defined as default.
+vmware_isregexp         | **Optional.** Treat blacklist and whitelist expressions as regexp.
