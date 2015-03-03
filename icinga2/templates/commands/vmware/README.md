@@ -583,8 +583,8 @@ vmware_nosession        | **Optional.** No auth session - IT SHOULD BE USED FOR 
 vmware_username         | **Optional.** The username to connect to Host or vCenter server. No value defined as default.
 vmware_password         | **Optional.** The username's password. No value defined as default.
 vmware_authfile         | **Required.** Use auth file instead username/password to session connect. No effect if **vmware_username** or **vmware_password** are defined <br> **Autentication file content:** <br>  username=vmuser <br> password=p@ssw0rd <br>  Defaults to "/etc/icinga2/vmware_esx_auth".
-vmware_warn             | **Optional.** The warning threshold in KBps(Kilobytes per Second).
-vmware_crit             | **Optional.** The critical threshold in KBps(Kilobytes per Second).
+vmware_warn             | **Optional.** The warning threshold in KBps(Kilobytes per Second). No value defined as default.
+vmware_crit             | **Optional.** The critical threshold in KBps(Kilobytes per Second). No value defined as default.
 
 
 #### <a id="plugin-check-command-vmware-esx-soap-host-net-receive"></a> vmware-esx-soap-host-net-receive
@@ -609,8 +609,8 @@ vmware_nosession        | **Optional.** No auth session - IT SHOULD BE USED FOR 
 vmware_username         | **Optional.** The username to connect to Host or vCenter server. No value defined as default.
 vmware_password         | **Optional.** The username's password. No value defined as default.
 vmware_authfile         | **Required.** Use auth file instead username/password to session connect. No effect if **vmware_username** or **vmware_password** are defined <br> **Autentication file content:** <br>  username=vmuser <br> password=p@ssw0rd <br>  Defaults to "/etc/icinga2/vmware_esx_auth".
-vmware_warn             | **Optional.** The warning threshold in KBps(Kilobytes per Second).
-vmware_crit             | **Optional.** The critical threshold in KBps(Kilobytes per Second).
+vmware_warn             | **Optional.** The warning threshold in KBps(Kilobytes per Second). No value defined as default.
+vmware_crit             | **Optional.** The critical threshold in KBps(Kilobytes per Second). No value defined as default.
 
 
 #### <a id="plugin-check-command-vmware-esx-soap-host-net-send"></a> vmware-esx-soap-host-net-send
@@ -635,8 +635,8 @@ vmware_nosession        | **Optional.** No auth session - IT SHOULD BE USED FOR 
 vmware_username         | **Optional.** The username to connect to Host or vCenter server. No value defined as default.
 vmware_password         | **Optional.** The username's password. No value defined as default.
 vmware_authfile         | **Required.** Use auth file instead username/password to session connect. No effect if **vmware_username** or **vmware_password** are defined <br> **Autentication file content:** <br>  username=vmuser <br> password=p@ssw0rd <br>  Defaults to "/etc/icinga2/vmware_esx_auth".
-vmware_warn             | **Optional.** The warning threshold in KBps(Kilobytes per Second).
-vmware_crit             | **Optional.** The critical threshold in KBps(Kilobytes per Second).
+vmware_warn             | **Optional.** The warning threshold in KBps(Kilobytes per Second). No value defined as default.
+vmware_crit             | **Optional.** The critical threshold in KBps(Kilobytes per Second). No value defined as default.
 
 
 #### <a id="plugin-check-command-vmware-esx-soap-host-net-nic"></a> vmware-esx-soap-host-net-nic
@@ -697,3 +697,53 @@ vmware_isregexp         | **Optional.** Treat blacklist and whitelist expression
 vmware_warn             | **Optional.** The warning threshold for volumes. Defaults to "80%".
 vmware_crit             | **Optional.** The critical threshold for volumes. Defaults to "90%".
 vmware_spaceleft        | **Optional.** This has to be used in conjunction with thresholds as mentioned above.
+
+
+#### <a id="plugin-check-command-vmware-esx-soap-host-io"></a> vmware-esx-soap-host-io
+
+Check command object for the `check_vmware_esx` plugin. Shows all disk io info. Without subselect no thresholds can be given. All I/O values are aggregated from historical intervals over the past 24 hours with a 5 minute sample rate.
+
+Custom Attributes:
+
+
+
+Name                    | Description
+------------------------|--------------
+vmware_host             | **Required.** ESX or ESXi hostname.
+vmware_sslport          | **Optional.** SSL port connection. Defaults to "443".
+vmware_ignoreunknown    | **Optional.** Sometimes 3 (unknown) is returned from a component. But the check itself is ok. With this option the plugin will return OK (0) instead of UNKNOWN (3). Defaults to "false".
+vmware_ignorewarning    | **Optional.** Sometimes 2 (warning) is returned from a component. But the check itself is ok (from an operator view). With this option the plugin will return OK (0) instead of WARNING (1). Defaults to "false".
+vmware_timeout          | **Optional.** Seconds before plugin times out. Defaults to "90".
+vmware_trace            | **Optional.** Set verbosity level of vSphere API request/respond trace.
+vmware_sessionfile      | **Optional.** Session file name enhancement.
+vmware_sessionfiledir   | **Optional.** Path to store the **vmware_sessionfile** file. Defaults to "/var/spool/icinga2/tmp".
+vmware_nosession        | **Optional.** No auth session - IT SHOULD BE USED FOR TESTING PURPOSES ONLY!. Defaults to "false".
+vmware_username         | **Optional.** The username to connect to Host or vCenter server. No value defined as default.
+vmware_password         | **Optional.** The username's password. No value defined as default.
+vmware_authfile         | **Required.** Use auth file instead username/password to session connect. No effect if **vmware_username** or **vmware_password** are defined <br> **Autentication file content:** <br>  username=vmuser <br> password=p@ssw0rd <br>  Defaults to "/etc/icinga2/vmware_esx_auth".
+
+
+#### <a id="plugin-check-command-vmware-esx-soap-host-io-aborted"></a> vmware-esx-soap-host-io-aborted
+
+Check command object for the `check_vmware_esx` plugin. Number of aborted SCSI commands.
+
+Custom Attributes:
+
+
+
+Name                    | Description
+------------------------|--------------
+vmware_host             | **Required.** ESX or ESXi hostname.
+vmware_sslport          | **Optional.** SSL port connection. Defaults to "443".
+vmware_ignoreunknown    | **Optional.** Sometimes 3 (unknown) is returned from a component. But the check itself is ok. With this option the plugin will return OK (0) instead of UNKNOWN (3). Defaults to "false".
+vmware_ignorewarning    | **Optional.** Sometimes 2 (warning) is returned from a component. But the check itself is ok (from an operator view). With this option the plugin will return OK (0) instead of WARNING (1). Defaults to "false".
+vmware_timeout          | **Optional.** Seconds before plugin times out. Defaults to "90".
+vmware_trace            | **Optional.** Set verbosity level of vSphere API request/respond trace.
+vmware_sessionfile      | **Optional.** Session file name enhancement.
+vmware_sessionfiledir   | **Optional.** Path to store the **vmware_sessionfile** file. Defaults to "/var/spool/icinga2/tmp".
+vmware_nosession        | **Optional.** No auth session - IT SHOULD BE USED FOR TESTING PURPOSES ONLY!. Defaults to "false".
+vmware_username         | **Optional.** The username to connect to Host or vCenter server. No value defined as default.
+vmware_password         | **Optional.** The username's password. No value defined as default.
+vmware_authfile         | **Required.** Use auth file instead username/password to session connect. No effect if **vmware_username** or **vmware_password** are defined <br> **Autentication file content:** <br>  username=vmuser <br> password=p@ssw0rd <br>  Defaults to "/etc/icinga2/vmware_esx_auth".
+vmware_warn             | **Optional.** The warning threshold. No value defined as default.
+vmware_crit             | **Optional.** The critical threshold. No value defined as default.
