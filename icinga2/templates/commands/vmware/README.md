@@ -451,8 +451,8 @@ vmware_nosession        | **Optional.** No auth session - IT SHOULD BE USED FOR 
 vmware_username         | **Optional.** The username to connect to Host or vCenter server. No value defined as default.
 vmware_password         | **Optional.** The username's password. No value defined as default.
 vmware_authfile         | **Required.** Use auth file instead username/password to session connect. No effect if **vmware_username** or **vmware_password** are defined <br> **Autentication file content:** <br>  username=vmuser <br> password=p@ssw0rd <br>  Defaults to "/etc/icinga2/vmware_esx_auth".
-vmware_warn             | **Optional.** The warning threshold in percent.. Defaults to "80%".
-vmware_crit             | **Optional.** The critical threshold in percent. Defaults to "90%".
+vmware_warn             | **Optional.** The warning threshold in percent.
+vmware_crit             | **Optional.** The critical threshold in percent.
 
 
 #### <a id="plugin-check-command-vmware-esx-soap-host-mem-swapused"></a> vmware-esx-soap-host-mem-swapused
@@ -477,6 +477,59 @@ vmware_nosession        | **Optional.** No auth session - IT SHOULD BE USED FOR 
 vmware_username         | **Optional.** The username to connect to Host or vCenter server. No value defined as default.
 vmware_password         | **Optional.** The username's password. No value defined as default.
 vmware_authfile         | **Required.** Use auth file instead username/password to session connect. No effect if **vmware_username** or **vmware_password** are defined <br> **Autentication file content:** <br>  username=vmuser <br> password=p@ssw0rd <br>  Defaults to "/etc/icinga2/vmware_esx_auth".
-vmware_warn             | **Optional.** The warning threshold in percent.. Defaults to "80%".
-vmware_crit             | **Optional.** The critical threshold in percent. Defaults to "90%".
+vmware_warn             | **Optional.** The warning threshold in percent.
+vmware_crit             | **Optional.** The critical threshold in percent. 
+vmware_multiline        | **Optional.** Multiline output in overview. This mean technically that a multiline output uses a HTML **\<br\>** for the GUI. No value defined as default.
+
+
+#### <a id="plugin-check-command-vmware-esx-soap-host-mem-overhead"></a> vmware-esx-soap-host-mem-overhead
+
+Check command object for the `check_vmware_esx` plugin. Additional mem used by VM Server in MB.
+
+Custom Attributes:
+
+
+
+Name                    | Description
+------------------------|--------------
+vmware_host             | **Required.** ESX or ESXi hostname.
+vmware_sslport          | **Optional.** SSL port connection. Defaults to "443".
+vmware_ignoreunknown    | **Optional.** Sometimes 3 (unknown) is returned from a component. But the check itself is ok. With this option the plugin will return OK (0) instead of UNKNOWN (3). Defaults to "false".
+vmware_ignorewarning    | **Optional.** Sometimes 2 (warning) is returned from a component. But the check itself is ok (from an operator view). With this option the plugin will return OK (0) instead of WARNING (1). Defaults to "false".
+vmware_timeout          | **Optional.** Seconds before plugin times out. Defaults to "90".
+vmware_trace            | **Optional.** Set verbosity level of vSphere API request/respond trace.
+vmware_sessionfile      | **Optional.** Session file name enhancement.
+vmware_sessionfiledir   | **Optional.** Path to store the **vmware_sessionfile** file. Defaults to "/var/spool/icinga2/tmp".
+vmware_nosession        | **Optional.** No auth session - IT SHOULD BE USED FOR TESTING PURPOSES ONLY!. Defaults to "false".
+vmware_username         | **Optional.** The username to connect to Host or vCenter server. No value defined as default.
+vmware_password         | **Optional.** The username's password. No value defined as default.
+vmware_authfile         | **Required.** Use auth file instead username/password to session connect. No effect if **vmware_username** or **vmware_password** are defined <br> **Autentication file content:** <br>  username=vmuser <br> password=p@ssw0rd <br>  Defaults to "/etc/icinga2/vmware_esx_auth".
+vmware_warn             | **Optional.** The warning threshold in percent.
+vmware_crit             | **Optional.** The critical threshold in percent.
+
+
+#### <a id="plugin-check-command-vmware-esx-soap-host-mem-memctl"></a> vmware-esx-soap-host-mem-memctl
+
+Check command object for the `check_vmware_esx` plugin. he sum of all vmmemctl values in MB for all powered-on virtual machines, plus vSphere services on the host. If the balloon target value is greater than the balloon value, the VMkernel inflates the balloon, causing more virtual machine memory to be reclaimed. If the balloon target value is less than the balloon value, the VMkernel deflates the balloon, which allows the virtual machine to consume additional memory if needed.used by VM memory control driver. In case of an error all VMs with their vmmemctl values will be displayed.
+
+Custom Attributes:
+
+
+
+Name                    | Description
+------------------------|--------------
+vmware_host             | **Required.** ESX or ESXi hostname.
+vmware_sslport          | **Optional.** SSL port connection. Defaults to "443".
+vmware_ignoreunknown    | **Optional.** Sometimes 3 (unknown) is returned from a component. But the check itself is ok. With this option the plugin will return OK (0) instead of UNKNOWN (3). Defaults to "false".
+vmware_ignorewarning    | **Optional.** Sometimes 2 (warning) is returned from a component. But the check itself is ok (from an operator view). With this option the plugin will return OK (0) instead of WARNING (1). Defaults to "false".
+vmware_timeout          | **Optional.** Seconds before plugin times out. Defaults to "90".
+vmware_trace            | **Optional.** Set verbosity level of vSphere API request/respond trace.
+vmware_sessionfile      | **Optional.** Session file name enhancement.
+vmware_sessionfiledir   | **Optional.** Path to store the **vmware_sessionfile** file. Defaults to "/var/spool/icinga2/tmp".
+vmware_nosession        | **Optional.** No auth session - IT SHOULD BE USED FOR TESTING PURPOSES ONLY!. Defaults to "false".
+vmware_username         | **Optional.** The username to connect to Host or vCenter server. No value defined as default.
+vmware_password         | **Optional.** The username's password. No value defined as default.
+vmware_authfile         | **Required.** Use auth file instead username/password to session connect. No effect if **vmware_username** or **vmware_password** are defined <br> **Autentication file content:** <br>  username=vmuser <br> password=p@ssw0rd <br>  Defaults to "/etc/icinga2/vmware_esx_auth".
+vmware_warn             | **Optional.** The warning threshold in percent.
+vmware_crit             | **Optional.** The critical threshold in percent.
 vmware_multiline        | **Optional.** Multiline output in overview. This mean technically that a multiline output uses a HTML **\<br\>** for the GUI. No value defined as default.
