@@ -1,7 +1,7 @@
 Monitoring
 ==========
 
-## <a id="plugin-check-commands"></a> Vmware
+## <a id="plugin-check-commands"></a> VMware
 Icinga2 check commands for [vmware esx](https://github.com/BaldMansMojo/check_vmware_esx) plugins.
 
 #### <a id="plugin-check-command-vmware-esx-dc-volumes"></a> vmware-esx-dc-volumes
