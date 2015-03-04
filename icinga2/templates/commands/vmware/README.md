@@ -10,8 +10,6 @@ Check command object for the `check_vmware_esx` plugin. Shows all datastore volu
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_datacenter       | **Required.** Datacenter/vCenter hostname.
@@ -44,8 +42,6 @@ Check command object for the `check_vmware_esx` plugin. Shows all runtime info f
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_datacenter       | **Required.** Datacenter/vCenter hostname.
@@ -67,8 +63,6 @@ vmware_authfile         | **Optional.** Use auth file instead username/password 
 Check command object for the `check_vmware_esx` plugin. List of vmware machines and their power state. BEWARE!! In larger environments systems can cause trouble displaying the informations needed due to the mass of data. Use **vmware_alertonly** to avoid this.
 
 Custom Attributes:
-
-
 
 Name                    | Description
 ------------------------|--------------
@@ -97,8 +91,6 @@ Check command object for the `check_vmware_esx` plugin. List of VMware ESX hosts
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_datacenter       | **Required.** Datacenter/vCenter hostname.
@@ -125,8 +117,6 @@ vmware_multiline        | **Optional.** Multiline output in overview. This mean 
 Check command object for the `check_vmware_esx` plugin. List of VMware clusters and their states.
 
 Custom Attributes:
-
-
 
 Name                    | Description
 ------------------------|--------------
@@ -155,8 +145,6 @@ Check command object for the `check_vmware_esx` plugin. All issues for the host.
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_datacenter       | **Required.** Datacenter/vCenter hostname.
@@ -183,8 +171,6 @@ Check command object for the `check_vmware_esx` plugin. Overall object status (g
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_datacenter       | **Required.** Datacenter/vCenter hostname.
@@ -206,8 +192,6 @@ vmware_authfile         | **Optional.** Use auth file instead username/password 
 Check command object for the `check_vmware_esx` plugin. Vmware Tools status.
 
 Custom Attributes:
-
-
 
 Name                    | Description
 ------------------------|--------------
@@ -237,8 +221,6 @@ Check command object for the `check_vmware_esx` plugin. Simple check to verify a
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_host             | **Required.** ESX or ESXi hostname.
@@ -261,8 +243,6 @@ Check command object for the `check_vmware_esx` plugin. Displays uptime of the V
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_host             | **Required.** ESX or ESXi hostname.
@@ -284,8 +264,6 @@ vmware_authfile         | **Optional.** Use auth file instead username/password 
 Check command object for the `check_vmware_esx` plugin. CPU usage in percentage.
 
 Custom Attributes:
-
-
 
 Name                    | Description
 ------------------------|--------------
@@ -311,8 +289,6 @@ Check command object for the `check_vmware_esx` plugin. Percentage of time that 
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_host             | **Required.** ESX or ESXi hostname.
@@ -335,8 +311,6 @@ Check command object for the `check_vmware_esx` plugin. CPU time spent in wait s
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_host             | **Required.** ESX or ESXi hostname.
@@ -358,8 +332,6 @@ vmware_authfile         | **Optional.** Use auth file instead username/password 
 Check command object for the `check_vmware_esx` plugin. Actively used CPU of the host, as a percentage of the total available CPU. Active CPU is approximately equal to the ratio of the used CPU to the available CPU.
 
 Custom Attributes:
-
-
 
 Name                    | Description
 ------------------------|--------------
@@ -385,8 +357,6 @@ Check command object for the `check_vmware_esx` plugin. All mem info(except over
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_host             | **Required.** ESX or ESXi hostname.
@@ -408,8 +378,6 @@ vmware_authfile         | **Optional.** Use auth file instead username/password 
 Check command object for the `check_vmware_esx` plugin. Average mem usage in percentage.
 
 Custom Attributes:
-
-
 
 Name                    | Description
 ------------------------|--------------
@@ -435,8 +403,6 @@ Check command object for the `check_vmware_esx` plugin. Amount of machine memory
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_host             | **Required.** ESX or ESXi hostname.
@@ -460,8 +426,6 @@ vmware_crit             | **Optional.** The critical threshold in percent. No va
 Check command object for the `check_vmware_esx` plugin. Amount of memory that is used by swap. Sum of memory swapped of all powered on VMs and vSphere services on the host in MB. In case of an error all VMs with their swap used will be displayed.
 
 Custom Attributes:
-
-
 
 Name                    | Description
 ------------------------|--------------
@@ -488,8 +452,6 @@ Check command object for the `check_vmware_esx` plugin. Additional mem used by V
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_host             | **Required.** ESX or ESXi hostname.
@@ -513,8 +475,6 @@ vmware_crit             | **Optional.** The critical threshold in percent. No va
 Check command object for the `check_vmware_esx` plugin. The sum of all vmmemctl values in MB for all powered-on virtual machines, plus vSphere services on the host. If the balloon target value is greater than the balloon value, the VMkernel inflates the balloon, causing more virtual machine memory to be reclaimed. If the balloon target value is less than the balloon value, the VMkernel deflates the balloon, which allows the virtual machine to consume additional memory if needed.used by VM memory control driver. In case of an error all VMs with their vmmemctl values will be displayed.
 
 Custom Attributes:
-
-
 
 Name                    | Description
 ------------------------|--------------
@@ -541,8 +501,6 @@ Check command object for the `check_vmware_esx` plugin. Shows net info.
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_host             | **Required.** ESX or ESXi hostname.
@@ -566,8 +524,6 @@ vmware_isregexp         | **Optional.** Treat blacklist expression as regexp.
 Check command object for the `check_vmware_esx` plugin. Overall network usage in KBps(Kilobytes per Second).
 
 Custom Attributes:
-
-
 
 Name                    | Description
 ------------------------|--------------
@@ -593,8 +549,6 @@ Check command object for the `check_vmware_esx` plugin. Data receive in KBps(Kil
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_host             | **Required.** ESX or ESXi hostname.
@@ -618,8 +572,6 @@ vmware_crit             | **Optional.** The critical threshold in KBps(Kilobytes
 Check command object for the `check_vmware_esx` plugin. Data send in KBps(Kilobytes per Second).
 
 Custom Attributes:
-
-
 
 Name                    | Description
 ------------------------|--------------
@@ -645,8 +597,6 @@ Check command object for the `check_vmware_esx` plugin. Check all active NICs.
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_host             | **Required.** ESX or ESXi hostname.
@@ -670,8 +620,6 @@ vmware_isregexp         | **Optional.** Treat blacklist expression as regexp.
 Check command object for the `check_vmware_esx` plugin. Shows all datastore volumes info.
 
 Custom Attributes:
-
-
 
 Name                    | Description
 ------------------------|--------------
@@ -705,8 +653,6 @@ Check command object for the `check_vmware_esx` plugin. Shows all disk io info. 
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_host             | **Required.** ESX or ESXi hostname.
@@ -728,8 +674,6 @@ vmware_authfile         | **Optional.** Use auth file instead username/password 
 Check command object for the `check_vmware_esx` plugin. Number of aborted SCSI commands.
 
 Custom Attributes:
-
-
 
 Name                    | Description
 ------------------------|--------------
@@ -755,8 +699,6 @@ Check command object for the `check_vmware_esx` plugin. Number of SCSI bus reset
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_host             | **Required.** ESX or ESXi hostname.
@@ -780,8 +722,6 @@ vmware_crit             | **Optional.** The critical threshold. No value defined
 Check command object for the `check_vmware_esx` plugin. Average number of kilobytes read from the disk each second.
 
 Custom Attributes:
-
-
 
 Name                    | Description
 ------------------------|--------------
@@ -807,8 +747,6 @@ Check command object for the `check_vmware_esx` plugin. Average amount of time (
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_host             | **Required.** ESX or ESXi hostname.
@@ -832,8 +770,6 @@ vmware_crit             | **Optional.** The critical threshold. No value defined
 Check command object for the `check_vmware_esx` plugin. Average number of kilobytes written to disk each second.
 
 Custom Attributes:
-
-
 
 Name                    | Description
 ------------------------|--------------
@@ -859,8 +795,6 @@ Check command object for the `check_vmware_esx` plugin. Average amount of time (
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_host             | **Required.** ESX or ESXi hostname.
@@ -884,8 +818,6 @@ vmware_crit             | **Optional.** The critical threshold. No value defined
 Check command object for the `check_vmware_esx` plugin. Aggregated disk I/O rate. For hosts, this metric includes the rates for all virtual machines running on the host.
 
 Custom Attributes:
-
-
 
 Name                    | Description
 ------------------------|--------------
@@ -911,8 +843,6 @@ Check command object for the `check_vmware_esx` plugin. Average amount of time (
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_host             | **Required.** ESX or ESXi hostname.
@@ -936,8 +866,6 @@ vmware_crit             | **Optional.** The critical threshold. No value defined
 Check command object for the `check_vmware_esx` plugin. Average amount of time (ms) to complete a SCSI command from the physical device.
 
 Custom Attributes:
-
-
 
 Name                    | Description
 ------------------------|--------------
@@ -963,8 +891,6 @@ Check command object for the `check_vmware_esx` plugin. Average amount of time (
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_host             | **Required.** ESX or ESXi hostname.
@@ -989,8 +915,6 @@ Check command object for the `check_vmware_esx` plugin. Average amount of time (
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_host             | **Required.** ESX or ESXi hostname.
@@ -1014,8 +938,6 @@ vmware_crit             | **Optional.** The critical threshold. No value defined
 Check command object for the `check_vmware_esx` plugin. List vm's with attached host mounted media like cd,dvd or floppy drives. This is important for monitoring because a virtual machine with a mount cd or dvd drive can not be moved to another host.
 
 Custom Attributes:
-
-
 
 Name                    | Description
 ------------------------|--------------
@@ -1043,8 +965,6 @@ Check command object for the `check_vmware_esx` plugin. Shows host service info.
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_host             | **Required.** ESX or ESXi hostname.
@@ -1071,8 +991,6 @@ Check command object for the `check_vmware_esx` plugin. Shows runtime info: VMs,
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_host             | **Required.** ESX or ESXi hostname.
@@ -1095,8 +1013,6 @@ Check command object for the `check_vmware_esx` plugin. Shows connection state.
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_host             | **Required.** ESX or ESXi hostname.
@@ -1118,8 +1034,6 @@ vmware_authfile         | **Optional.** Use auth file instead username/password 
 Check command object for the `check_vmware_esx` plugin. List of VMware machines and their status.
 
 Custom Attributes:
-
-
 
 Name                    | Description
 ------------------------|--------------
@@ -1147,8 +1061,6 @@ Check command object for the `check_vmware_esx` plugin. Overall object status (g
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_host             | **Required.** ESX or ESXi hostname.
@@ -1170,8 +1082,6 @@ vmware_authfile         | **Optional.** Use auth file instead username/password 
 Check command object for the `check_vmware_esx` plugin. Checks cpu/storage/memory/sensor status.
 
 Custom Attributes:
-
-
 
 Name                    | Description
 ------------------------|--------------
@@ -1198,8 +1108,6 @@ Check command object for the `check_vmware_esx` plugin. List all available senso
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_host             | **Required.** ESX or ESXi hostname.
@@ -1225,8 +1133,6 @@ Check command object for the `check_vmware_esx` plugin. This is to avoid a doubl
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_host             | **Required.** ESX or ESXi hostname.
@@ -1251,8 +1157,6 @@ vmware_isregexp         | **Optional.** Treat blacklist and whitelist expression
 Check command object for the `check_vmware_esx` plugin. Local storage status check.
 
 Custom Attributes:
-
-
 
 Name                    | Description
 ------------------------|--------------
@@ -1280,8 +1184,6 @@ Check command object for the `check_vmware_esx` plugin. Lists all temperature se
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_host             | **Required.** ESX or ESXi hostname.
@@ -1307,8 +1209,6 @@ vmware_multiline        | **Optional.** Multiline output in overview. This mean 
 Check command object for the `check_vmware_esx` plugin. Lists all configuration issues for the host.
 
 Custom Attributes:
-
-
 
 Name                    | Description
 ------------------------|--------------
@@ -1336,8 +1236,6 @@ Check command object for the `check_vmware_esx` plugin. Shows Host storage info.
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_host             | **Required.** ESX or ESXi hostname.
@@ -1362,8 +1260,6 @@ vmware_isregexp         | **Optional.** Treat blacklist and whitelist expression
 Check command object for the `check_vmware_esx` plugin. List host bus adapters.
 
 Custom Attributes:
-
-
 
 Name                    | Description
 ------------------------|--------------
@@ -1391,8 +1287,6 @@ Check command object for the `check_vmware_esx` plugin. List SCSI logical units.
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_host             | **Required.** ESX or ESXi hostname.
@@ -1418,8 +1312,6 @@ vmware_multiline        | **Optional.** Multiline output in overview. This mean 
 Check command object for the `check_vmware_esx` plugin. List multipaths and the associated paths.
 
 Custom Attributes:
-
-
 
 Name                    | Description
 ------------------------|--------------
@@ -1448,8 +1340,6 @@ Check command object for the `check_vmware_esx` plugin. Shows all CPU usage info
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_datacenter       | **Optional.** Datacenter/vCenter hostname. Conflicts with **vmware_host**.
@@ -1474,8 +1364,6 @@ vmware_authfile         | **Optional.** Use auth file instead username/password 
 Check command object for the `check_vmware_esx` plugin. Percentage of time that the virtual machine was ready, but could not get scheduled to run on the physical CPU.
 
 Custom Attributes:
-
-
 
 Name                    | Description
 ------------------------|--------------
@@ -1503,8 +1391,6 @@ Check command object for the `check_vmware_esx` plugin. CPU time spent in wait s
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_datacenter       | **Optional.** Datacenter/vCenter hostname. Conflicts with **vmware_host**.
@@ -1530,8 +1416,6 @@ vmware_crit             | **Optional.** The critical threshold. No value defined
 Check command object for the `check_vmware_esx` plugin. Amount of actively used virtual CPU, as a percentage of total available CPU. This is the host's view of the CPU usage, not the guest operating system view. It is the average CPU utilization over all available virtual CPUs in the virtual machine.
 
 Custom Attributes:
-
-
 
 Name                    | Description
 ------------------------|--------------
@@ -1559,8 +1443,6 @@ Check command object for the `check_vmware_esx` plugin. Shows all memory info, e
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_datacenter       | **Optional.** Datacenter/vCenter hostname. Conflicts with **vmware_host**.
@@ -1584,8 +1466,6 @@ vmware_authfile         | **Optional.** Use auth file instead username/password 
 Check command object for the `check_vmware_esx` plugin. Average mem usage in percentage of configured virtual machine "physical" memory.
 
 Custom Attributes:
-
-
 
 Name                    | Description
 ------------------------|--------------
@@ -1614,8 +1494,6 @@ Check command object for the `check_vmware_esx` plugin. Amount of guest physical
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_datacenter       | **Optional.** Datacenter/vCenter hostname. Conflicts with **vmware_host**.
@@ -1641,8 +1519,6 @@ vmware_crit             | **Optional.** The critical threshold. No value defined
 Check command object for the `check_vmware_esx` plugin. Amount of guest physical memory that is currently reclaimed from the virtual machine through ballooning. This is the amount of guest physical memory that has been allocated and pinned by the balloon driver.
 
 Custom Attributes:
-
-
 
 Name                    | Description
 ------------------------|--------------
@@ -1671,8 +1547,6 @@ Check command object for the `check_vmware_esx` plugin. Shows net info.
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_datacenter       | **Optional.** Datacenter/vCenter hostname. Conflicts with **vmware_host**.
@@ -1696,8 +1570,6 @@ vmware_authfile         | **Optional.** Use auth file instead username/password 
 Check command object for the `check_vmware_esx` plugin. Overall network usage in KBps(Kilobytes per Second).
 
 Custom Attributes:
-
-
 
 Name                    | Description
 ------------------------|--------------
@@ -1725,8 +1597,6 @@ Check command object for the `check_vmware_esx` plugin. Receive in KBps(Kilobyte
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_datacenter       | **Optional.** Datacenter/vCenter hostname. Conflicts with **vmware_host**.
@@ -1752,8 +1622,6 @@ vmware_crit             | **Optional.** The critical threshold. No value defined
 Check command object for the `check_vmware_esx` plugin. Send in KBps(Kilobytes per Second).
 
 Custom Attributes:
-
-
 
 Name                    | Description
 ------------------------|--------------
@@ -1781,8 +1649,6 @@ Check command object for the `check_vmware_esx` plugin. SShows all disk io info.
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_datacenter       | **Optional.** Datacenter/vCenter hostname. Conflicts with **vmware_host**.
@@ -1806,8 +1672,6 @@ vmware_authfile         | **Optional.** Use auth file instead username/password 
 Check command object for the `check_vmware_esx` plugin. Average number of kilobytes read from the disk each second.
 
 Custom Attributes:
-
-
 
 Name                    | Description
 ------------------------|--------------
@@ -1835,8 +1699,6 @@ Check command object for the `check_vmware_esx` plugin. Average number of kiloby
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_datacenter       | **Optional.** Datacenter/vCenter hostname. Conflicts with **vmware_host**.
@@ -1862,8 +1724,6 @@ vmware_crit             | **Optional.** The critical threshold. No value defined
 Check command object for the `check_vmware_esx` plugin. Aggregated disk I/O rate.
 
 Custom Attributes:
-
-
 
 Name                    | Description
 ------------------------|--------------
@@ -1891,8 +1751,6 @@ Check command object for the `check_vmware_esx` plugin. Shows virtual machine ru
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_datacenter       | **Optional.** Datacenter/vCenter hostname. Conflicts with **vmware_host**.
@@ -1916,8 +1774,6 @@ vmware_authfile         | **Optional.** Use auth file instead username/password 
 Check command object for the `check_vmware_esx` plugin. Shows the connection state.
 
 Custom Attributes:
-
-
 
 Name                    | Description
 ------------------------|--------------
@@ -1943,8 +1799,6 @@ Check command object for the `check_vmware_esx` plugin. Shows virtual machine po
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_datacenter       | **Optional.** Datacenter/vCenter hostname. Conflicts with **vmware_host**.
@@ -1969,8 +1823,6 @@ Check command object for the `check_vmware_esx` plugin. Overall object status (g
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_datacenter       | **Optional.** Datacenter/vCenter hostname. Conflicts with **vmware_host**.
@@ -1994,8 +1846,6 @@ vmware_authfile         | **Optional.** Use auth file instead username/password 
 Check command object for the `check_vmware_esx` plugin. Console connections to virtual machine.
 
 Custom Attributes:
-
-
 
 Name                    | Description
 ------------------------|--------------
@@ -2023,8 +1873,6 @@ Check command object for the `check_vmware_esx` plugin. Guest OS status. Needs V
 
 Custom Attributes:
 
-
-
 Name                    | Description
 ------------------------|--------------
 vmware_datacenter       | **Optional.** Datacenter/vCenter hostname. Conflicts with **vmware_host**.
@@ -2047,8 +1895,6 @@ vmware_authfile         | **Optional.** Use auth file instead username/password 
 Check command object for the `check_vmware_esx` plugin. Guest OS status. VMware tools  status.
 
 Custom Attributes:
-
-
 
 Name                    | Description
 ------------------------|--------------
@@ -2073,8 +1919,6 @@ vmware_authfile         | **Optional.** Use auth file instead username/password 
 Check command object for the `check_vmware_esx` plugin. All issues for the virtual machine.
 
 Custom Attributes:
-
-
 
 Name                    | Description
 ------------------------|--------------
