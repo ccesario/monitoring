@@ -1609,7 +1609,7 @@ vmware_crit             | **Optional.** Critical threshold in percent. Defaults 
 
 #### <a id="plugin-check-command-vmware-esx-soap-vm-mem-consumed"></a> vmware-esx-soap-vm-mem-consumed
 
-Check command object for the `check_vmware_esx` plugin. Amount of guest physical memory in MB consumed by the virtual machine for guest memory. Consumed memory does not include overhead memory. It includes shared memory and memory that might be reserved, but not actually used. Use this metric for charge-back purposes.
+Check command object for the `check_vmware_esx` plugin. Amount of guest physical memory in MB consumed by the virtual machine for guest memory. Consumed memory does not include overhead memory. It includes shared memory and memory that might be reserved, but not actually used. Use this metric for charge-back purposes.<br>
 **vm consumed memory = memory granted - memory saved**
 
 Custom Attributes:
