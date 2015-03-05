@@ -1344,7 +1344,7 @@ Name                    | Description
 ------------------------|--------------
 vmware_datacenter       | **Optional.** Datacenter/vCenter hostname. Conflicts with **vmware_host**.
 vmware_host             | **Optional.** ESX or ESXi hostname. Conflicts with **vmware_datacenter**.
-vmware_name             | **Required.** Virtual machine name.
+vmware_vmname           | **Required.** Virtual machine name.
 vmware_sslport          | **Optional.** SSL port connection. Defaults to "443".
 vmware_ignoreunknown    | **Optional.** Sometimes 3 (unknown) is returned from a component. But the check itself is ok. With this option the plugin will return OK (0) instead of UNKNOWN (3). Defaults to "false".
 vmware_ignorewarning    | **Optional.** Sometimes 2 (warning) is returned from a component. But the check itself is ok (from an operator view). With this option the plugin will return OK (0) instead of WARNING (1). Defaults to "false".
@@ -1369,7 +1369,7 @@ Name                    | Description
 ------------------------|--------------
 vmware_datacenter       | **Optional.** Datacenter/vCenter hostname. Conflicts with **vmware_host**.
 vmware_host             | **Optional.** ESX or ESXi hostname. Conflicts with **vmware_datacenter**.
-vmware_name             | **Required.** Virtual machine name.
+vmware_vmname           | **Required.** Virtual machine name.
 vmware_sslport          | **Optional.** SSL port connection. Defaults to "443".
 vmware_ignoreunknown    | **Optional.** Sometimes 3 (unknown) is returned from a component. But the check itself is ok. With this option the plugin will return OK (0) instead of UNKNOWN (3). Defaults to "false".
 vmware_ignorewarning    | **Optional.** Sometimes 2 (warning) is returned from a component. But the check itself is ok (from an operator view). With this option the plugin will return OK (0) instead of WARNING (1). Defaults to "false".
@@ -1395,7 +1395,7 @@ Name                    | Description
 ------------------------|--------------
 vmware_datacenter       | **Optional.** Datacenter/vCenter hostname. Conflicts with **vmware_host**.
 vmware_host             | **Optional.** ESX or ESXi hostname. Conflicts with **vmware_datacenter**.
-vmware_name             | **Required.** Virtual machine name.
+vmware_vmname           | **Required.** Virtual machine name.
 vmware_sslport          | **Optional.** SSL port connection. Defaults to "443".
 vmware_ignoreunknown    | **Optional.** Sometimes 3 (unknown) is returned from a component. But the check itself is ok. With this option the plugin will return OK (0) instead of UNKNOWN (3). Defaults to "false".
 vmware_ignorewarning    | **Optional.** Sometimes 2 (warning) is returned from a component. But the check itself is ok (from an operator view). With this option the plugin will return OK (0) instead of WARNING (1). Defaults to "false".
@@ -1421,7 +1421,7 @@ Name                    | Description
 ------------------------|--------------
 vmware_datacenter       | **Optional.** Datacenter/vCenter hostname. Conflicts with **vmware_host**.
 vmware_host             | **Optional.** ESX or ESXi hostname. Conflicts with **vmware_datacenter**.
-vmware_name             | **Required.** Virtual machine name.
+vmware_vmname           | **Required.** Virtual machine name.
 vmware_sslport          | **Optional.** SSL port connection. Defaults to "443".
 vmware_ignoreunknown    | **Optional.** Sometimes 3 (unknown) is returned from a component. But the check itself is ok. With this option the plugin will return OK (0) instead of UNKNOWN (3). Defaults to "false".
 vmware_ignorewarning    | **Optional.** Sometimes 2 (warning) is returned from a component. But the check itself is ok (from an operator view). With this option the plugin will return OK (0) instead of WARNING (1). Defaults to "false".
@@ -1447,7 +1447,7 @@ Name                    | Description
 ------------------------|--------------
 vmware_datacenter       | **Optional.** Datacenter/vCenter hostname. Conflicts with **vmware_host**.
 vmware_host             | **Optional.** ESX or ESXi hostname. Conflicts with **vmware_datacenter**.
-vmware_name             | **Required.** Virtual machine name.
+vmware_vmname           | **Required.** Virtual machine name.
 vmware_sslport          | **Optional.** SSL port connection. Defaults to "443".
 vmware_ignoreunknown    | **Optional.** Sometimes 3 (unknown) is returned from a component. But the check itself is ok. With this option the plugin will return OK (0) instead of UNKNOWN (3). Defaults to "false".
 vmware_ignorewarning    | **Optional.** Sometimes 2 (warning) is returned from a component. But the check itself is ok (from an operator view). With this option the plugin will return OK (0) instead of WARNING (1). Defaults to "false".
@@ -1471,7 +1471,7 @@ Name                    | Description
 ------------------------|--------------
 vmware_datacenter       | **Optional.** Datacenter/vCenter hostname. Conflicts with **vmware_host**.
 vmware_host             | **Optional.** ESX or ESXi hostname. Conflicts with **vmware_datacenter**.
-vmware_name             | **Required.** Virtual machine name.
+vmware_vmname           | **Required.** Virtual machine name.
 vmware_sslport          | **Optional.** SSL port connection. Defaults to "443".
 vmware_ignoreunknown    | **Optional.** Sometimes 3 (unknown) is returned from a component. But the check itself is ok. With this option the plugin will return OK (0) instead of UNKNOWN (3). Defaults to "false".
 vmware_ignorewarning    | **Optional.** Sometimes 2 (warning) is returned from a component. But the check itself is ok (from an operator view). With this option the plugin will return OK (0) instead of WARNING (1). Defaults to "false".
@@ -1498,7 +1498,7 @@ Name                    | Description
 ------------------------|--------------
 vmware_datacenter       | **Optional.** Datacenter/vCenter hostname. Conflicts with **vmware_host**.
 vmware_host             | **Optional.** ESX or ESXi hostname. Conflicts with **vmware_datacenter**.
-vmware_name             | **Required.** Virtual machine name.
+vmware_vmname           | **Required.** Virtual machine name.
 vmware_sslport          | **Optional.** SSL port connection. Defaults to "443".
 vmware_ignoreunknown    | **Optional.** Sometimes 3 (unknown) is returned from a component. But the check itself is ok. With this option the plugin will return OK (0) instead of UNKNOWN (3). Defaults to "false".
 vmware_ignorewarning    | **Optional.** Sometimes 2 (warning) is returned from a component. But the check itself is ok (from an operator view). With this option the plugin will return OK (0) instead of WARNING (1). Defaults to "false".
@@ -1524,7 +1524,7 @@ Name                    | Description
 ------------------------|--------------
 vmware_datacenter       | **Optional.** Datacenter/vCenter hostname. Conflicts with **vmware_host**.
 vmware_host             | **Optional.** ESX or ESXi hostname. Conflicts with **vmware_datacenter**.
-vmware_name             | **Required.** Virtual machine name.
+vmware_vmname           | **Required.** Virtual machine name.
 vmware_sslport          | **Optional.** SSL port connection. Defaults to "443".
 vmware_ignoreunknown    | **Optional.** Sometimes 3 (unknown) is returned from a component. But the check itself is ok. With this option the plugin will return OK (0) instead of UNKNOWN (3). Defaults to "false".
 vmware_ignorewarning    | **Optional.** Sometimes 2 (warning) is returned from a component. But the check itself is ok (from an operator view). With this option the plugin will return OK (0) instead of WARNING (1). Defaults to "false".
@@ -1551,7 +1551,7 @@ Name                    | Description
 ------------------------|--------------
 vmware_datacenter       | **Optional.** Datacenter/vCenter hostname. Conflicts with **vmware_host**.
 vmware_host             | **Optional.** ESX or ESXi hostname. Conflicts with **vmware_datacenter**.
-vmware_name             | **Required.** Virtual machine name.
+vmware_vmname           | **Required.** Virtual machine name.
 vmware_sslport          | **Optional.** SSL port connection. Defaults to "443".
 vmware_ignoreunknown    | **Optional.** Sometimes 3 (unknown) is returned from a component. But the check itself is ok. With this option the plugin will return OK (0) instead of UNKNOWN (3). Defaults to "false".
 vmware_ignorewarning    | **Optional.** Sometimes 2 (warning) is returned from a component. But the check itself is ok (from an operator view). With this option the plugin will return OK (0) instead of WARNING (1). Defaults to "false".
@@ -1575,7 +1575,7 @@ Name                    | Description
 ------------------------|--------------
 vmware_datacenter       | **Optional.** Datacenter/vCenter hostname. Conflicts with **vmware_host**.
 vmware_host             | **Optional.** ESX or ESXi hostname. Conflicts with **vmware_datacenter**.
-vmware_name             | **Required.** Virtual machine name.
+vmware_vmname           | **Required.** Virtual machine name.
 vmware_sslport          | **Optional.** SSL port connection. Defaults to "443".
 vmware_ignoreunknown    | **Optional.** Sometimes 3 (unknown) is returned from a component. But the check itself is ok. With this option the plugin will return OK (0) instead of UNKNOWN (3). Defaults to "false".
 vmware_ignorewarning    | **Optional.** Sometimes 2 (warning) is returned from a component. But the check itself is ok (from an operator view). With this option the plugin will return OK (0) instead of WARNING (1). Defaults to "false".
@@ -1601,7 +1601,7 @@ Name                    | Description
 ------------------------|--------------
 vmware_datacenter       | **Optional.** Datacenter/vCenter hostname. Conflicts with **vmware_host**.
 vmware_host             | **Optional.** ESX or ESXi hostname. Conflicts with **vmware_datacenter**.
-vmware_name             | **Required.** Virtual machine name.
+vmware_vmname           | **Required.** Virtual machine name.
 vmware_sslport          | **Optional.** SSL port connection. Defaults to "443".
 vmware_ignoreunknown    | **Optional.** Sometimes 3 (unknown) is returned from a component. But the check itself is ok. With this option the plugin will return OK (0) instead of UNKNOWN (3). Defaults to "false".
 vmware_ignorewarning    | **Optional.** Sometimes 2 (warning) is returned from a component. But the check itself is ok (from an operator view). With this option the plugin will return OK (0) instead of WARNING (1). Defaults to "false".
@@ -1627,7 +1627,7 @@ Name                    | Description
 ------------------------|--------------
 vmware_datacenter       | **Optional.** Datacenter/vCenter hostname. Conflicts with **vmware_host**.
 vmware_host             | **Optional.** ESX or ESXi hostname. Conflicts with **vmware_datacenter**.
-vmware_name             | **Required.** Virtual machine name.
+vmware_vmname           | **Required.** Virtual machine name.
 vmware_sslport          | **Optional.** SSL port connection. Defaults to "443".
 vmware_ignoreunknown    | **Optional.** Sometimes 3 (unknown) is returned from a component. But the check itself is ok. With this option the plugin will return OK (0) instead of UNKNOWN (3). Defaults to "false".
 vmware_ignorewarning    | **Optional.** Sometimes 2 (warning) is returned from a component. But the check itself is ok (from an operator view). With this option the plugin will return OK (0) instead of WARNING (1). Defaults to "false".
@@ -1653,7 +1653,7 @@ Name                    | Description
 ------------------------|--------------
 vmware_datacenter       | **Optional.** Datacenter/vCenter hostname. Conflicts with **vmware_host**.
 vmware_host             | **Optional.** ESX or ESXi hostname. Conflicts with **vmware_datacenter**.
-vmware_name             | **Required.** Virtual machine name.
+vmware_vmname           | **Required.** Virtual machine name.
 vmware_sslport          | **Optional.** SSL port connection. Defaults to "443".
 vmware_ignoreunknown    | **Optional.** Sometimes 3 (unknown) is returned from a component. But the check itself is ok. With this option the plugin will return OK (0) instead of UNKNOWN (3). Defaults to "false".
 vmware_ignorewarning    | **Optional.** Sometimes 2 (warning) is returned from a component. But the check itself is ok (from an operator view). With this option the plugin will return OK (0) instead of WARNING (1). Defaults to "false".
@@ -1677,7 +1677,7 @@ Name                    | Description
 ------------------------|--------------
 vmware_datacenter       | **Optional.** Datacenter/vCenter hostname. Conflicts with **vmware_host**.
 vmware_host             | **Optional.** ESX or ESXi hostname. Conflicts with **vmware_datacenter**.
-vmware_name             | **Required.** Virtual machine name.
+vmware_vmname           | **Required.** Virtual machine name.
 vmware_sslport          | **Optional.** SSL port connection. Defaults to "443".
 vmware_ignoreunknown    | **Optional.** Sometimes 3 (unknown) is returned from a component. But the check itself is ok. With this option the plugin will return OK (0) instead of UNKNOWN (3). Defaults to "false".
 vmware_ignorewarning    | **Optional.** Sometimes 2 (warning) is returned from a component. But the check itself is ok (from an operator view). With this option the plugin will return OK (0) instead of WARNING (1). Defaults to "false".
@@ -1703,7 +1703,7 @@ Name                    | Description
 ------------------------|--------------
 vmware_datacenter       | **Optional.** Datacenter/vCenter hostname. Conflicts with **vmware_host**.
 vmware_host             | **Optional.** ESX or ESXi hostname. Conflicts with **vmware_datacenter**.
-vmware_name             | **Required.** Virtual machine name.
+vmware_vmname           | **Required.** Virtual machine name.
 vmware_sslport          | **Optional.** SSL port connection. Defaults to "443".
 vmware_ignoreunknown    | **Optional.** Sometimes 3 (unknown) is returned from a component. But the check itself is ok. With this option the plugin will return OK (0) instead of UNKNOWN (3). Defaults to "false".
 vmware_ignorewarning    | **Optional.** Sometimes 2 (warning) is returned from a component. But the check itself is ok (from an operator view). With this option the plugin will return OK (0) instead of WARNING (1). Defaults to "false".
@@ -1729,7 +1729,7 @@ Name                    | Description
 ------------------------|--------------
 vmware_datacenter       | **Optional.** Datacenter/vCenter hostname. Conflicts with **vmware_host**.
 vmware_host             | **Optional.** ESX or ESXi hostname. Conflicts with **vmware_datacenter**.
-vmware_name             | **Required.** Virtual machine name.
+vmware_vmname           | **Required.** Virtual machine name.
 vmware_sslport          | **Optional.** SSL port connection. Defaults to "443".
 vmware_ignoreunknown    | **Optional.** Sometimes 3 (unknown) is returned from a component. But the check itself is ok. With this option the plugin will return OK (0) instead of UNKNOWN (3). Defaults to "false".
 vmware_ignorewarning    | **Optional.** Sometimes 2 (warning) is returned from a component. But the check itself is ok (from an operator view). With this option the plugin will return OK (0) instead of WARNING (1). Defaults to "false".
@@ -1755,7 +1755,7 @@ Name                    | Description
 ------------------------|--------------
 vmware_datacenter       | **Optional.** Datacenter/vCenter hostname. Conflicts with **vmware_host**.
 vmware_host             | **Optional.** ESX or ESXi hostname. Conflicts with **vmware_datacenter**.
-vmware_name             | **Required.** Virtual machine name.
+vmware_vmname           | **Required.** Virtual machine name.
 vmware_sslport          | **Optional.** SSL port connection. Defaults to "443".
 vmware_ignoreunknown    | **Optional.** Sometimes 3 (unknown) is returned from a component. But the check itself is ok. With this option the plugin will return OK (0) instead of UNKNOWN (3). Defaults to "false".
 vmware_ignorewarning    | **Optional.** Sometimes 2 (warning) is returned from a component. But the check itself is ok (from an operator view). With this option the plugin will return OK (0) instead of WARNING (1). Defaults to "false".
@@ -1779,7 +1779,7 @@ Name                    | Description
 ------------------------|--------------
 vmware_datacenter       | **Optional.** Datacenter/vCenter hostname. Conflicts with **vmware_host**.
 vmware_host             | **Optional.** ESX or ESXi hostname. Conflicts with **vmware_datacenter**.
-vmware_name             | **Required.** Virtual machine name.
+vmware_vmname           | **Required.** Virtual machine name.
 vmware_sslport          | **Optional.** SSL port connection. Defaults to "443".
 vmware_ignoreunknown    | **Optional.** Sometimes 3 (unknown) is returned from a component. But the check itself is ok. With this option the plugin will return OK (0) instead of UNKNOWN (3). Defaults to "false".
 vmware_ignorewarning    | **Optional.** Sometimes 2 (warning) is returned from a component. But the check itself is ok (from an operator view). With this option the plugin will return OK (0) instead of WARNING (1). Defaults to "false".
@@ -1803,7 +1803,7 @@ Name                    | Description
 ------------------------|--------------
 vmware_datacenter       | **Optional.** Datacenter/vCenter hostname. Conflicts with **vmware_host**.
 vmware_host             | **Optional.** ESX or ESXi hostname. Conflicts with **vmware_datacenter**.
-vmware_name             | **Required.** Virtual machine name.
+vmware_vmname           | **Required.** Virtual machine name.
 vmware_sslport          | **Optional.** SSL port connection. Defaults to "443".
 vmware_ignoreunknown    | **Optional.** Sometimes 3 (unknown) is returned from a component. But the check itself is ok. With this option the plugin will return OK (0) instead of UNKNOWN (3). Defaults to "false".
 vmware_ignorewarning    | **Optional.** Sometimes 2 (warning) is returned from a component. But the check itself is ok (from an operator view). With this option the plugin will return OK (0) instead of WARNING (1). Defaults to "false".
@@ -1827,7 +1827,7 @@ Name                    | Description
 ------------------------|--------------
 vmware_datacenter       | **Optional.** Datacenter/vCenter hostname. Conflicts with **vmware_host**.
 vmware_host             | **Optional.** ESX or ESXi hostname. Conflicts with **vmware_datacenter**.
-vmware_name             | **Required.** Virtual machine name.
+vmware_vmname           | **Required.** Virtual machine name.
 vmware_sslport          | **Optional.** SSL port connection. Defaults to "443".
 vmware_ignoreunknown    | **Optional.** Sometimes 3 (unknown) is returned from a component. But the check itself is ok. With this option the plugin will return OK (0) instead of UNKNOWN (3). Defaults to "false".
 vmware_ignorewarning    | **Optional.** Sometimes 2 (warning) is returned from a component. But the check itself is ok (from an operator view). With this option the plugin will return OK (0) instead of WARNING (1). Defaults to "false".
@@ -1851,7 +1851,7 @@ Name                    | Description
 ------------------------|--------------
 vmware_datacenter       | **Optional.** Datacenter/vCenter hostname. Conflicts with **vmware_host**.
 vmware_host             | **Optional.** ESX or ESXi hostname. Conflicts with **vmware_datacenter**.
-vmware_name             | **Required.** Virtual machine name.
+vmware_vmname           | **Required.** Virtual machine name.
 vmware_sslport          | **Optional.** SSL port connection. Defaults to "443".
 vmware_ignoreunknown    | **Optional.** Sometimes 3 (unknown) is returned from a component. But the check itself is ok. With this option the plugin will return OK (0) instead of UNKNOWN (3). Defaults to "false".
 vmware_ignorewarning    | **Optional.** Sometimes 2 (warning) is returned from a component. But the check itself is ok (from an operator view). With this option the plugin will return OK (0) instead of WARNING (1). Defaults to "false".
@@ -1877,7 +1877,7 @@ Name                    | Description
 ------------------------|--------------
 vmware_datacenter       | **Optional.** Datacenter/vCenter hostname. Conflicts with **vmware_host**.
 vmware_host             | **Optional.** ESX or ESXi hostname. Conflicts with **vmware_datacenter**.
-vmware_name             | **Required.** Virtual machine name.
+vmware_vmname           | **Required.** Virtual machine name.
 vmware_sslport          | **Optional.** SSL port connection. Defaults to "443".
 vmware_ignoreunknown    | **Optional.** Sometimes 3 (unknown) is returned from a component. But the check itself is ok. With this option the plugin will return OK (0) instead of UNKNOWN (3). Defaults to "false".
 vmware_ignorewarning    | **Optional.** Sometimes 2 (warning) is returned from a component. But the check itself is ok (from an operator view). With this option the plugin will return OK (0) instead of WARNING (1). Defaults to "false".
@@ -1900,7 +1900,7 @@ Name                    | Description
 ------------------------|--------------
 vmware_datacenter       | **Optional.** Datacenter/vCenter hostname. Conflicts with **vmware_host**.
 vmware_host             | **Optional.** ESX or ESXi hostname. Conflicts with **vmware_datacenter**.
-vmware_name             | **Required.** Virtual machine name.
+vmware_vmname           | **Required.** Virtual machine name.
 vmware_sslport          | **Optional.** SSL port connection. Defaults to "443".
 vmware_ignoreunknown    | **Optional.** Sometimes 3 (unknown) is returned from a component. But the check itself is ok. With this option the plugin will return OK (0) instead of UNKNOWN (3). Defaults to "false".
 vmware_ignorewarning    | **Optional.** Sometimes 2 (warning) is returned from a component. But the check itself is ok (from an operator view). With this option the plugin will return OK (0) instead of WARNING (1). Defaults to "false".
@@ -1924,7 +1924,7 @@ Name                    | Description
 ------------------------|--------------
 vmware_datacenter       | **Optional.** Datacenter/vCenter hostname. Conflicts with **vmware_host**.
 vmware_host             | **Optional.** ESX or ESXi hostname. Conflicts with **vmware_datacenter**.
-vmware_name             | **Required.** Virtual machine name.
+vmware_vmname           | **Required.** Virtual machine name.
 vmware_sslport          | **Optional.** SSL port connection. Defaults to "443".
 vmware_ignoreunknown    | **Optional.** Sometimes 3 (unknown) is returned from a component. But the check itself is ok. With this option the plugin will return OK (0) instead of UNKNOWN (3). Defaults to "false".
 vmware_ignorewarning    | **Optional.** Sometimes 2 (warning) is returned from a component. But the check itself is ok (from an operator view). With this option the plugin will return OK (0) instead of WARNING (1). Defaults to "false".
